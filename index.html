@@ -20,7 +20,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+      <a class="logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
       <ul class="nav">
         <li class="nav__referent"><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
         <li class="nav__referent"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -48,7 +48,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__btn--select btn--select" type="button" data-modal-open>Заказать услугу</button>
+        <button class="hero__btn hero__btn--select" type="button" data-modal-open>Заказать услугу</button>
     </section>
     <section class="properties">
       <div class="container">
@@ -324,7 +324,7 @@
     <div class="container">
       <div class="find-us">
         <div class="find">
-          <a class="logo footer__logo" href="/">Web<span class="logo--footer">Studio</span></a>
+          <a class="logo footer__logo" href="/">Web<span class="logo logo--footer">Studio</span></a>
           <ul class="contacts contacts--footer">
             <li class="contacts__contact contacts__contact--footer">
               <address class="contacts__post">г. Киев, пр-т Леси Украинки, 26</address>
@@ -340,12 +340,12 @@
           </ul>
         </div>
         <div class="social social--footer">
-          <h2 class="title title--social title--spam">Присоединяйтесь</h2>
+          <h2 class="social__title">Присоединяйтесь</h2>
           <ul class="social__list social__list--footer">
             <li class="social__item social__item--footer">
               <a class="social__link social__link--footer link" href="" target="_blank" rel="noopener noreferrer"
                 aria-label="инстаграм иконка">
-                <svg class="social-icon social__icon--footer" width="20px" height="20px">
+                <svg class="social__icon social__icon--footer" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg></a>
             </li>
@@ -373,12 +373,12 @@
           </ul>
         </div>
         <div class="spam">
-          <h2 class="title--spam">подпишитесь на рассылку</h2>
+          <h2 class="spam__title">подпишитесь на рассылку</h2>
           <form class="spam__form">
             <label class="spam__label">
               <input class="spam__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="btn--spam" type="submit">Подписаться<a class="spam-link link" href="" target="_blank"
+            <button class="btn btn--spam" type="submit">Подписаться<a class="spam-link link" href="" target="_blank"
                 rel="noopener noreferrer" aria-label="инстаграм иконка">
                 <svg class="spam__icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-send"></use>
@@ -391,45 +391,45 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close" type="button" data-modal-close>
-        <svg class="close_icon" width="11px" height="11px">
+        <svg class="close__icon" width="11px" height="11px">
           <use href="./images/sprite.svg#icon-X"></use>
         </svg></a></button>
-      <p class="modal_title">Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
       <form class="form" name="signup_form" autocomplete="on" novalidate>
-        <label class="form_label">
-          <p class="form_name">Имя</p>
-          <input class="form_input" type="text" name="name" autofocus />
-          <svg class="form_icon" width="12px" height="12px">
+        <label class="form__label">
+          <p class="form__name">Имя</p>
+          <input class="form__input" type="text" name="name" autofocus />
+          <svg class="form__icon" width="12px" height="12px">
             <use href="./images/sprite.svg#icon-man"></use>
           </svg></a>
         </label>
-        <label class="form_label">
-          <p class="form_name">Телефон</p>
-          <input class="form_input" type="tel" name="phone" />
-          <svg class="form_icon" width="13px" height="13px">
+        <label class="form__label">
+          <p class="form__name">Телефон</p>
+          <input class="form__input" type="tel" name="phone" />
+          <svg class="form__icon" width="13px" height="13px">
             <use href="./images/sprite.svg#icon-tube"></use>
           </svg></a>
         </label>
-        <label class="form_label">
-          <p class="form_input-name">Почта</p>
-          <input class="form_input" type="email" name="email" />
-          <svg class="form_icon" width="15px" height="12px">
+        <label class="form__label">
+          <p class="form__name">Почта</p>
+          <input class="form__input" type="email" name="email" />
+          <svg class="form__icon" width="15px" height="12px">
             <use href="./images/sprite.svg#icon-envy"></use>
           </svg></a>
         </label>
-        <label class="form_label">
-          <p class="form_name">Коментарий</p>
-          <textarea class="form_input" name="feedback" row="6" placeholder="Введите текст"></textarea>
+        <label class="form__label">
+          <p class="form__name">Коментарий</p>
+          <textarea class="form__input" name="feedback" row="6" placeholder="Введите текст"></textarea>
         </label>
         <label class="check">
-          <input class="check_checkbox" visualy hidden type="checkbox" name="policy" value="agree" />
+          <input class="check__checkbox" visualy hidden type="checkbox" name="policy" value="agree" />
           <span class="custom-checkbox">
-            <svg class="check_icon" width="11px" height="8px">
+            <svg class="check__icon" width="11px" height="8px">
               <use href="./images/sprite.svg#icon-galka">
               </use>
             </svg>
           </span>
-          <span class="check_name">Cоглашаюсь с рассылкой и принимаю <a class="check_link" href="">Условия
+          <span class="check__name">Cоглашаюсь с рассылкой и принимаю <a class="check__link" href="">Условия
               договора</a></span>
         </label>
         <button class="submit-btn" type="submit">Отправить</button>
